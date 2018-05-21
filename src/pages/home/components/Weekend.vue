@@ -4,7 +4,7 @@
 		<ul>
 			<li 
 				class="item border-bottom" 
-				v-for="item of recomendList" 
+				v-for="item of list" 
 				:key="item.id"
 			>
 				<div class="item-img-wrapper">
@@ -22,26 +22,8 @@
 <script>
 	export default {
 		name: 'HomeRecomend',
-		data (){
-			return {
-				recomendList: [{
-					id: '0001',
-					imgUrl: 'http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg',
-					title: '北京欢乐谷',
-					desc: '52817条评论'
-				}, {
-					id: '0002',
-					imgUrl: 'http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg',
-					title: '北京欢乐谷',
-					desc: '52817条评论'
-				}, {
-					id: '0003',
-					imgUrl: 'http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg',
-					title: '北京欢乐谷',
-					desc: '52817条评论'
-				}]
-			}
-			
+		props: {
+			list: Array
 		}
 	};
 </script>
@@ -55,7 +37,7 @@
 	.item-img-wrapper
 		overflow: hidden
 		height: 0
-		padding-bottom: 33.9%
+		padding-bottom: 37.09%
 		.item-img
 			width: 100%
 	.item-info
