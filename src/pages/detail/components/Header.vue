@@ -16,7 +16,6 @@
 			景点详情
 			<div class="iconfont header-fixed-back">&#xe624;</div>
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </template>
 
@@ -70,6 +69,7 @@
 			color: #fff
 			font-size: .4rem
 	.header-fixed
+		z-index: 2
 		position: fixed
 		top: 0
 		left: 0
